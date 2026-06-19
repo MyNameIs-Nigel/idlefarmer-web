@@ -144,6 +144,84 @@ html {
   }
 }
 
+/* ------------------------------------------------------------------ *
+ * Farm cabinet (/farm)
+ * The arcade hardware shell stays; inside the CRT sits a faithful, self-
+ * playing render of the real terminal game, plus the scrolling Daily Furrow
+ * ticker and the field-guide almanac below.
+ * ------------------------------------------------------------------ */
+
+/* CRT monitor housing the terminal screen. */
+.crt-screen {
+  box-shadow:
+    inset 0 0 0 4px rgba(143, 240, 106, 0.05),
+    inset 0 0 60px rgba(63, 158, 77, 0.16);
+}
+
+.crt-overlay {
+  background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.16) 50%);
+  background-size: 100% 3px;
+  mix-blend-mode: multiply;
+}
+
+.crt-overlay::after {
+  position: absolute;
+  inset: -40% 0 auto;
+  height: 45%;
+  content: "";
+  background: linear-gradient(180deg, transparent, rgba(143, 240, 106, 0.06), transparent);
+  animation: scan 5.5s linear infinite;
+  pointer-events: none;
+}
+
+.term-welcome {
+  animation: welcomeFade 0.4s ease-out;
+}
+
+@keyframes welcomeFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.coin-bump {
+  display: inline-block;
+  animation: coinBump 0.32s ease-out;
+}
+
+@keyframes coinBump {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.22);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ticker-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+
+.ticker-track {
+  animation: tickerScroll 38s linear infinite;
+}
+
+@keyframes tickerScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
