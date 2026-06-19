@@ -34,7 +34,8 @@ export default function FarmCabinet() {
   return (
     <main
       className="theme-root min-h-screen overflow-hidden bg-[#d7d1c3] text-[#17150f]"
-      style={{ "--accent": "#ffb000" } as CSSProperties}
+      // Farm's cabinet accent is leafy green (matches the cabinet on the arcade floor).
+      style={{ "--accent": "#5fc868" } as CSSProperties}
     >
       <div aria-hidden="true" className="arcade-backdrop fixed inset-0 pointer-events-none" />
       <div aria-hidden="true" className="fixed inset-0 pointer-events-none opacity-[0.18] mix-blend-multiply grain" />
