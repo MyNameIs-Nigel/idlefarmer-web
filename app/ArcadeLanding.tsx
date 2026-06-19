@@ -9,7 +9,7 @@ const games = [
     title: "Farm",
     slug: "farm",
     status: "Now featuring",
-    accent: "#ffb000",
+    accent: "#5fc868",
     cabinet: "F-01",
     summary:
       "A cozy idle farm that lives in your terminal. Plant, wait, harvest, and let the field keep time while you are away.",
