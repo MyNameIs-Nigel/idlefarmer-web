@@ -76,21 +76,6 @@ export default function FarmOpengraphImage() {
           <div
             style={{
               display: "flex",
-              marginBottom: 20,
-              padding: "12px 24px",
-              borderRadius: 999,
-              background: accent,
-              color: "#17150f",
-              fontSize: 28,
-              fontWeight: 800,
-              letterSpacing: 3,
-            }}
-          >
-            FARM
-          </div>
-          <div
-            style={{
-              display: "flex",
               fontSize: 108,
               fontWeight: 900,
               lineHeight: 1,
