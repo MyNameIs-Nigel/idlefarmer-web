@@ -202,7 +202,7 @@ export default function ArcadeLanding() {
                 </div>
 
                 <div
-                  className={`cabinet-screen relative overflow-hidden rounded-[1.1rem] border-4 border-[#17150f] bg-[#17150f] p-4 text-[#f8f1dc] ${
+                  className={`cabinet-screen relative overflow-hidden rounded-[1.1rem] border-4 border-[#17150f] bg-[#17150f] p-4 text-[#f8f1dc] [container-type:inline-size] ${
                     powered ? "" : "is-off"
                   }`}
                 >
@@ -211,7 +211,7 @@ export default function ArcadeLanding() {
                     <p className="mb-2 font-mono text-xs uppercase tracking-[0.24em] text-[var(--cabinet-accent)]">
                       {screen.presents}
                     </p>
-                    <h2 className="font-display text-5xl font-black uppercase leading-none tracking-[-0.08em] sm:text-7xl lg:text-8xl">
+                    <h2 className="font-display text-[clamp(2rem,21cqw,7rem)] font-black uppercase leading-none tracking-[-0.08em] [overflow-wrap:normal] [word-break:keep-all]">
                       {screen.title}
                     </h2>
                     <div className="mt-8 grid grid-cols-4 gap-2">
