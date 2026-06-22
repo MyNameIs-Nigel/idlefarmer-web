@@ -375,8 +375,8 @@ export default function ArcadeLanding() {
             Insert coin.
           </h2>
           <p className="mt-5 text-lg font-bold leading-8 text-[#f8f1dc]/80">
-            Donations are not a guilt screen. They are the coin slot that keeps the cabinets online: hosting,
-            domains, backups, and enough runway to build the next machine.
+            Donations are not necessary, but they are the coin slot that keeps the cabinets online: 
+            hosting, domains, backups, and enough runway to build the next machine.
           </p>
           <div className="mt-6 grid grid-cols-3 gap-2 font-mono text-xs font-black uppercase tracking-[0.16em]">
             <a className="rounded-xl border-2 border-[#f8f1dc] px-3 py-3 text-center transition-colors hover:bg-[#f8f1dc] hover:text-[#17150f]" href="https://nigel-smith.dev" target="_blank" rel="noreferrer">
